@@ -58,6 +58,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
+          file: ./api_yamdb/Dockerfile
           tags: frantsevich/infra:latest
   deploy:
     runs-on: ubuntu-latest
